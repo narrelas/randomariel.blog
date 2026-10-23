@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RandomAriel — Blog personnel</title>
+    <meta name="description" content="Bienvenue sur RandomAriel. Des vidéos, des découvertes et des histoires à partager.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a class="logo" href="#accueil">RandomAriel<span>.</span></a>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#videos">Vidéos</a>
+            <a href="#articles">Articles</a>
+            <a href="#apropos">À propos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome" id="accueil">
+            <p class="small-title">LE BLOG PERSONNEL</p>
+            <h1>Bienvenue sur RandomAriel.</h1>
+            <p>
+                Des vidéos, des histoires et des choses intéressantes
+                à découvrir.
+            </p>
+        </section>
+
+        <section class="section" id="videos">
+            <div class="section-heading">
+                <div>
+                    <p class="small-title">À LA UNE</p>
+                    <h2>Vidéos</h2>
+                </div>
+            </div>
+
+            <article class="featured">
+
+                
+            
+                <div class="video-placeholder">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/BgdPEqd1EJs?rel=0"
+                    title="Yeba Mboka - RandomAriel"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                </div>
+
+
+
+                <div class="featured-info">
+                    <p class="category">DOCUMENTAIRE</p>
+                    <h3>Yeba Mboka : connaître les lieux qui nous entourent</h3>
+                    <p>
+                        Les noms des arrêts, l'histoire de nos quartiers
+                        et les petites choses que nous ne remarquons pas
+                        toujours.
+                    </p>
+
+                    <!-- Remplace # par le lien de ta vidéo YouTube -->
+                    <a class="text-link" href="https://youtu.be/BgdPEqd1EJs"
+                       id="featured-video-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Regarder la vidéo →
+                    </a>
+                </div>
+            </article>
+
+            <p class="note">
+                D'autres vidéos seront ajoutées ici au fil du temps.
+            </p>
+        </section>
+
+        <section class="section" id="articles">
+            <div class="section-heading">
+                <div>
+                    <p class="small-title">À LIRE</p>
+                    <h2>Articles et découvertes</h2>
+                </div>
+            </div>
+
+            <label class="search">
+                <span aria-hidden="true">⌕</span>
+                <input id="search" type="search"
+                       placeholder="Rechercher un article..."
+                       aria-label="Rechercher un article">
+            </label>
+
+            <div class="filters" aria-label="Catégories">
+                <button class="filter active" data-filter="all">Tout</button>
+                <button class="filter" data-filter="lieux">Lieux</button>
+                <button class="filter" data-filter="nature">Nature</button>
+                <button class="filter" data-filter="histoire">Histoire</button>
+                <button class="filter" data-filter="autres">Autres</button>
+            </div>
+
+            <div class="article-list" id="article-list">
+
+                <article class="article" data-category="lieux">
+                    <div class="article-number">01</div>
+                    <div class="article-info">
+                        <p class="category">LIEUX</p>
+                        <h3>Pourquoi nos arrêts portent-ils ces noms ?</h3>
+                        <p>
+                            Derrière certains noms se cachent des histoires
+                            que peu de gens connaissent.
+                        </p>
+                    </div>
+                    <a href="#" class="article-link"
+                       aria-label="Lire l'article sur les noms des arrêts">↗</a>
+                </article>
+
+                <article class="article" data-category="nature">
+                    <div class="article-number">02</div>
+                    <div class="article-info">
+                        <p class="category">NATURE</p>
+                        <h3>Un arbre peut-il annoncer la pluie ?</h3>
+                        <p>
+                            Une observation locale qui mérite d'être
+                            étudiée et expliquée.
+                        </p>
+                    </div>
+                    <a href="#" class="article-link"
+                       aria-label="Lire l'article sur les arbres">↗</a>
+                </article>
+
+                <article class="article" data-category="histoire">
+                    <div class="article-number">03</div>
+                    <div class="article-info">
+                        <p class="category">HISTOIRE</p>
+                        <h3>Ce que nos quartiers ont à raconter</h3>
+                        <p>
+                            Des souvenirs, des noms et des histoires
+                            transmis au fil des années.
+                        </p>
+                    </div>
+                    <a href="#" class="article-link"
+                       aria-label="Lire l'article sur l'histoire des quartiers">↗</a>
+                </article>
+
+            </div>
+
+            <p id="empty-message" class="note" hidden>
+                Aucun article ne correspond à ta recherche.
+            </p>
+        </section>
+
+        <section class="about" id="apropos">
+            <h2>À propos</h2>
+            <p>
+                RandomAriel est mon blog personnel. J'y partage des vidéos,
+                des découvertes, des histoires et des sujets qui m'intéressent.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo" href="#accueil">RandomAriel<span>.</span></a>
+        <p>© 2026 RandomAriel</p>
+    </footer>
+
+</body>
+</html>
